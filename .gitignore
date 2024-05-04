@@ -1,0 +1,38 @@
+# .NET
+*.dll
+*.exe
+*.pdb
+*.user
+*.build
+*.publish.xml
+*.cache
+*.log
+bin/
+obj/
+TestResults/
+[Tt]est[Rr]esult*/
+*.VisualState.xml
+_build/
+msbuild.log
+msbuild.err
+msbuild.wrn
+msbuild.out
+*.suo
+*.userprefs
+*.vs/
+*.vssscc
+*.vspscc
+*.sln.docstates
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# React
+build/
+dist/
+
+# Other Stuff
+.mono/
