@@ -30,7 +30,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapPost("/sample", async (HttpContext context, IdentifierService service) =>
+app.MapPost("/api/sample", async (HttpContext context, IdentifierService service) =>
 {
 
     var newRecord = await context.Request.ReadFromJsonAsync<IdentifierService.CreateSampleData>();
@@ -43,7 +43,7 @@ app.MapPost("/sample", async (HttpContext context, IdentifierService service) =>
 });
 
 
-app.MapGet("/sample", (IdentifierService service) =>
+app.MapGet("/api/sample", (IdentifierService service) =>
 {
     var response = new
     {
