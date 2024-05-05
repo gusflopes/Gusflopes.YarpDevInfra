@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
 import viteLogo from "/vite.svg";
@@ -20,7 +20,10 @@ function App() {
   const fetchData = async () => {
     // get url from env variable
     const url = import.meta.env.VITE_API_URL;
-    const response = await axios.get(`${url}/sample`);
+
+    const response: AxiosResponse<ExampleResponse, any> = await axios.get(
+      `${url}/api/sample`
+    );
     console.log(response.data.records);
     if (response.status === 200) {
       setData(response.data.records);
@@ -31,7 +34,7 @@ function App() {
   const handleSubmit = async () => {
     const url = import.meta.env.VITE_API_URL;
     if (!newRecord) return;
-    const response = await axios.post(`${url}/sample`, {
+    const response = await axios.post(`${url}/api/sample`, {
       description: newRecord,
     });
     console.log(response.data);
