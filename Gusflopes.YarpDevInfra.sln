@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{11D3E12A-C66
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarpDevInfra.GatewayAPI", "src\YarpDevInfra.GatewayAPI\YarpDevInfra.GatewayAPI.csproj", "{78B895A3-B5E7-4A6F-A24E-9BAF4E78A3BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarpDevInfra.SampleAPI", "src\backend\YarpDevInfra.SampleAPI\YarpDevInfra.SampleAPI.csproj", "{71C2EA7F-FC06-480F-81C6-D5A56E071C76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarpDevInfra.SampleAPI", "src\YarpDevInfra.SampleAPI\YarpDevInfra.SampleAPI.csproj", "{DFF9E912-5C87-4202-86C3-BC07708E2470}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,13 +22,13 @@ Global
 		{78B895A3-B5E7-4A6F-A24E-9BAF4E78A3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78B895A3-B5E7-4A6F-A24E-9BAF4E78A3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78B895A3-B5E7-4A6F-A24E-9BAF4E78A3BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71C2EA7F-FC06-480F-81C6-D5A56E071C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71C2EA7F-FC06-480F-81C6-D5A56E071C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71C2EA7F-FC06-480F-81C6-D5A56E071C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71C2EA7F-FC06-480F-81C6-D5A56E071C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF9E912-5C87-4202-86C3-BC07708E2470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF9E912-5C87-4202-86C3-BC07708E2470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF9E912-5C87-4202-86C3-BC07708E2470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF9E912-5C87-4202-86C3-BC07708E2470}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{78B895A3-B5E7-4A6F-A24E-9BAF4E78A3BE} = {11D3E12A-C664-42E2-8F67-750DA871C7C4}
-		{71C2EA7F-FC06-480F-81C6-D5A56E071C76} = {11D3E12A-C664-42E2-8F67-750DA871C7C4}
+		{DFF9E912-5C87-4202-86C3-BC07708E2470} = {11D3E12A-C664-42E2-8F67-750DA871C7C4}
 	EndGlobalSection
 EndGlobal
