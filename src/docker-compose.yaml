@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: ./YarpDevInfra.SampleAPI
+      dockerfile: Dockerfile
+    ports:
+      - "${API_PORT}:8080"
+    container_name: ${PR_NUMBER}-sample-api
+
+  web:
+    build:
+      context: ./sample-web
+      dockerfile: Dockerfile
+      args:
+        API_URL: ${API_URL} #"http://localhost:5100"
+    ports:
+      - "${WEB_PORT}:80"
+    environment:
+      - API_PORT=${API_PORT}
+    container_name: ${PR_NUMBER}-sample-web
+    depends_on:
+      - api
+
